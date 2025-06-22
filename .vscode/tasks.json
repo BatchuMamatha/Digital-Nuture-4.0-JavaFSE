@@ -1,0 +1,10 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Employee Management System",
+			"type": "shell",
+			"command": "cd \"c:\\Users\\saika\\OneDrive\\Desktop\\Cognizant\\Digital-Nuture-4.0-JavaFSE\\Week-1_Data structures and Algorithms\\Exercise 4_Employee Management System\\EmployeeManagementSystem\" && mvn clean compile exec:java -Dexec.mainClass=\"com.employee.EmployeeManagementSystem\""
+		}
+	]
+}
