@@ -1,0 +1,9 @@
+com\factory\Document.class
+com\factory\DocumentFactory.class
+com\factory\WordDocument.class
+com\factory\ExcelDocument.class
+com\factory\PdfDocumentFactory.class
+com\factory\FactoryMethodTest.class
+com\factory\ExcelDocumentFactory.class
+com\factory\PdfDocument.class
+com\factory\WordDocumentFactory.class
