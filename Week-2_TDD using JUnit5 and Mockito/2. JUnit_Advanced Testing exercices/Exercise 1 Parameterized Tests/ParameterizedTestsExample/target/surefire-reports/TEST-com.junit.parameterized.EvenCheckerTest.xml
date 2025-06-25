@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.junit.parameterized.EvenCheckerTest" time="0.902" tests="87" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="24"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="c:\Users\saika\OneDrive\Desktop\Cognizant\Digital-Nuture-4.0-JavaFSE\Week-2_TDD using JUnit5 and Mockito\2. JUnit_Advanced Testing exercices\Exercise 1 Parameterized Tests\ParameterizedTestsExample\target\test-classes;c:\Users\saika\OneDrive\Desktop\Cognizant\Digital-Nuture-4.0-JavaFSE\Week-2_TDD using JUnit5 and Mockito\2. JUnit_Advanced Testing exercices\Exercise 1 Parameterized Tests\ParameterizedTestsExample\target\classes;C:\Users\saika\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\saika\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\saika\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\saika\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\saika\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\saika\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\saika\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\saika\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="24"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\saika\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\latest\bin"/>
+    <property name="sun.java.command" value="C:\Users\saika\AppData\Local\Temp\surefire6209057636797862346\surefirebooter-20250625195615680_3.jar C:\Users\saika\AppData\Local\Temp\surefire6209057636797862346 2025-06-25T19-56-15_514-jvmRun1 surefire-20250625195615680_1tmp surefire_0-20250625195615680_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="c:\Users\saika\OneDrive\Desktop\Cognizant\Digital-Nuture-4.0-JavaFSE\Week-2_TDD using JUnit5 and Mockito\2. JUnit_Advanced Testing exercices\Exercise 1 Parameterized Tests\ParameterizedTestsExample\target\test-classes;c:\Users\saika\OneDrive\Desktop\Cognizant\Digital-Nuture-4.0-JavaFSE\Week-2_TDD using JUnit5 and Mockito\2. JUnit_Advanced Testing exercices\Exercise 1 Parameterized Tests\ParameterizedTestsExample\target\classes;C:\Users\saika\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\saika\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\saika\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\saika\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\saika\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\saika\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\saika\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\saika\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\saika"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="C:\Users\saika\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\latest"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="c:\Users\saika\OneDrive\Desktop\Cognizant\Digital-Nuture-4.0-JavaFSE\Week-2_TDD using JUnit5 and Mockito\2. JUnit_Advanced Testing exercices\Exercise 1 Parameterized Tests\ParameterizedTestsExample"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\saika\AppData\Local\Temp\surefire6209057636797862346\surefirebooter-20250625195615680_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="24.0.1+9"/>
+    <property name="user.name" value="saika"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-24.0.1+9"/>
+    <property name="localRepository" value="C:\Users\saika\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\saika\AppData\Local\Temp\"/>
+    <property name="java.version" value="24.0.1"/>
+    <property name="user.dir" value="c:\Users\saika\OneDrive\Desktop\Cognizant\Digital-Nuture-4.0-JavaFSE\Week-2_TDD using JUnit5 and Mockito\2. JUnit_Advanced Testing exercices\Exercise 1 Parameterized Tests\ParameterizedTestsExample"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\saika\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\latest\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\saika\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\gradle\latest\bin;C:\Users\saika\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\maven\latest\bin;C:\Users\saika\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\latest\bin;C:\hive\bin;C:\hadoop\bin;C:\hadoop\sbin;C:\Program Files\Java\bin;C:\Program Files\Eclipse Adoptium\jdk-8.0.452.9-hotspot\bin;c:\Users\saika\AppData\Local\Programs\cursor\resources\app\bin;C:\Python\Scripts\;C:\Python\;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\derby\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.26.4-hotspot\bin;C:\Users\saika\.local\bin;C:\Users\saika\anaconda3;C:\Users\saika\anaconda3\Library\mingw-w64\bin;C:\hadoop\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\hive\bin;C:\hive\lib;C:\hive\bin;C:\derby\bin;C:\Program Files\Eclipse Adoptium\jdk-8.0.452.9-hotspot\bin;C:\Users\saika\anaconda3\Library\usr\bin;C:\Users\saika\ana;C:\Windows\System32;C:\hadoop\bin;C:\Users\saika\anaconda3;C:\Users\saika\anaconda3\Library\mingw-w64\bin;C:\Users\saika\anaconda3\Library\usr\bin;C:\Users\saika\anaconda3\Library\bin;C:\Users\saika\anaconda3\Scripts;C:\Users\saika\AppData\Local\Microsoft\WindowsApps;C:\Microsoft VS Code\bin;C:\Users\saika\AppData\Roaming\npm;C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.1.1\bin;;C:\Users\saika\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\saika\.cargo\bin;C:\hive\bin;C:\Program Files\Java\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;;c:\Users\saika\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="24.0.1+9"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="68.0"/>
+  </properties>
+  <testcase name="testIsEven_EdgeCases_HandlesCorrectly(int)[1]" classname="com.junit.parameterized.EvenCheckerTest" time="0.086">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing edge case: -2147483648
+✓ Edge case -2147483648 correctly handled: true
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_EdgeCases_HandlesCorrectly(int)[2]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing edge case: 2147483646
+✓ Edge case 2147483646 correctly handled: true
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_EdgeCases_HandlesCorrectly(int)[3]" classname="com.junit.parameterized.EvenCheckerTest" time="0.003">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing edge case: 2147483647
+✓ Edge case 2147483647 correctly handled: false
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_EdgeCases_HandlesCorrectly(int)[4]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing edge case: 0
+✓ Edge case 0 correctly handled: true
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_MethodSource_VariousScenarios(int, boolean, String)[1]" classname="com.junit.parameterized.EvenCheckerTest" time="0.012">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing: Zero should be even (number: 0)
+✓ Zero should be even - result: true
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_MethodSource_VariousScenarios(int, boolean, String)[2]" classname="com.junit.parameterized.EvenCheckerTest" time="0.003">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing: Smallest positive even number (number: 2)
+✓ Smallest positive even number - result: true
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_MethodSource_VariousScenarios(int, boolean, String)[3]" classname="com.junit.parameterized.EvenCheckerTest" time="0.006">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing: Smallest positive odd number (number: 1)
+✓ Smallest positive odd number - result: false
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_MethodSource_VariousScenarios(int, boolean, String)[4]" classname="com.junit.parameterized.EvenCheckerTest" time="0.003">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing: Negative even number (number: -2)
+✓ Negative even number - result: true
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_MethodSource_VariousScenarios(int, boolean, String)[5]" classname="com.junit.parameterized.EvenCheckerTest" time="0.003">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing: Negative odd number (number: -1)
+✓ Negative odd number - result: false
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_MethodSource_VariousScenarios(int, boolean, String)[6]" classname="com.junit.parameterized.EvenCheckerTest" time="0.005">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing: Large even number (number: 1000000)
+✓ Large even number - result: true
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_MethodSource_VariousScenarios(int, boolean, String)[7]" classname="com.junit.parameterized.EvenCheckerTest" time="0.003">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing: Large odd number (number: 999999)
+✓ Large odd number - result: false
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_MethodSource_VariousScenarios(int, boolean, String)[8]" classname="com.junit.parameterized.EvenCheckerTest" time="0.006">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing: Near max even value (number: 2147483646)
+✓ Near max even value - result: true
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_MethodSource_VariousScenarios(int, boolean, String)[9]" classname="com.junit.parameterized.EvenCheckerTest" time="0.004">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing: Max integer value (odd) (number: 2147483647)
+✓ Max integer value (odd) - result: false
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_MethodSource_VariousScenarios(int, boolean, String)[10]" classname="com.junit.parameterized.EvenCheckerTest" time="0.003">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing: Min integer value (even) (number: -2147483648)
+✓ Min integer value (even) - result: true
+]]></system-out>
+  </testcase>
+  <testcase name="testIsOdd_OddNumbers_ReturnsTrue(int)[1]" classname="com.junit.parameterized.EvenCheckerTest" time="0.008">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isOdd with odd number: 1
+✓ 1 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsOdd_OddNumbers_ReturnsTrue(int)[2]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isOdd with odd number: 3
+✓ 3 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsOdd_OddNumbers_ReturnsTrue(int)[3]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isOdd with odd number: 5
+✓ 5 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsOdd_OddNumbers_ReturnsTrue(int)[4]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isOdd with odd number: 7
+✓ 7 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsOdd_OddNumbers_ReturnsTrue(int)[5]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isOdd with odd number: 9
+✓ 9 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsOdd_OddNumbers_ReturnsTrue(int)[6]" classname="com.junit.parameterized.EvenCheckerTest" time="0.001">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isOdd with odd number: 11
+✓ 11 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsOdd_OddNumbers_ReturnsTrue(int)[7]" classname="com.junit.parameterized.EvenCheckerTest" time="0.008">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isOdd with odd number: 13
+✓ 13 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsOdd_OddNumbers_ReturnsTrue(int)[8]" classname="com.junit.parameterized.EvenCheckerTest" time="0.004">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isOdd with odd number: 15
+✓ 15 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsOdd_OddNumbers_ReturnsTrue(int)[9]" classname="com.junit.parameterized.EvenCheckerTest" time="0.003">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isOdd with odd number: 17
+✓ 17 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsOdd_OddNumbers_ReturnsTrue(int)[10]" classname="com.junit.parameterized.EvenCheckerTest" time="0.003">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isOdd with odd number: 19
+✓ 19 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testGetNextEven_VariousInputs_CorrectNextEven(int, int)[1]" classname="com.junit.parameterized.EvenCheckerTest" time="0.008">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing getNextEven: 1 -> expected: 2
+✓ Next even after 1 is correctly 2
+]]></system-out>
+  </testcase>
+  <testcase name="testGetNextEven_VariousInputs_CorrectNextEven(int, int)[2]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing getNextEven: 2 -> expected: 4
+✓ Next even after 2 is correctly 4
+]]></system-out>
+  </testcase>
+  <testcase name="testGetNextEven_VariousInputs_CorrectNextEven(int, int)[3]" classname="com.junit.parameterized.EvenCheckerTest" time="0.003">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing getNextEven: 3 -> expected: 4
+✓ Next even after 3 is correctly 4
+]]></system-out>
+  </testcase>
+  <testcase name="testGetNextEven_VariousInputs_CorrectNextEven(int, int)[4]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing getNextEven: 4 -> expected: 6
+✓ Next even after 4 is correctly 6
+]]></system-out>
+  </testcase>
+  <testcase name="testGetNextEven_VariousInputs_CorrectNextEven(int, int)[5]" classname="com.junit.parameterized.EvenCheckerTest" time="0.042">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing getNextEven: 5 -> expected: 6
+✓ Next even after 5 is correctly 6
+]]></system-out>
+  </testcase>
+  <testcase name="testGetNextEven_VariousInputs_CorrectNextEven(int, int)[6]" classname="com.junit.parameterized.EvenCheckerTest" time="0.003">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing getNextEven: 0 -> expected: 2
+✓ Next even after 0 is correctly 2
+]]></system-out>
+  </testcase>
+  <testcase name="testGetNextEven_VariousInputs_CorrectNextEven(int, int)[7]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing getNextEven: -1 -> expected: 0
+✓ Next even after -1 is correctly 0
+]]></system-out>
+  </testcase>
+  <testcase name="testGetNextEven_VariousInputs_CorrectNextEven(int, int)[8]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing getNextEven: -2 -> expected: 0
+✓ Next even after -2 is correctly 0
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_EvenNumbers_ReturnsTrue(int)[1]" classname="com.junit.parameterized.EvenCheckerTest" time="0.004">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing even number: 0
+✓ 0 is correctly identified as even
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_EvenNumbers_ReturnsTrue(int)[2]" classname="com.junit.parameterized.EvenCheckerTest" time="0.007">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing even number: 2
+✓ 2 is correctly identified as even
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_EvenNumbers_ReturnsTrue(int)[3]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing even number: 4
+✓ 4 is correctly identified as even
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_EvenNumbers_ReturnsTrue(int)[4]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing even number: 6
+✓ 6 is correctly identified as even
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_EvenNumbers_ReturnsTrue(int)[5]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing even number: 8
+✓ 8 is correctly identified as even
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_EvenNumbers_ReturnsTrue(int)[6]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing even number: 10
+✓ 10 is correctly identified as even
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_EvenNumbers_ReturnsTrue(int)[7]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing even number: 100
+✓ 100 is correctly identified as even
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_EvenNumbers_ReturnsTrue(int)[8]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing even number: 1000
+✓ 1000 is correctly identified as even
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_EvenNumbers_ReturnsTrue(int)[9]" classname="com.junit.parameterized.EvenCheckerTest" time="0.003">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing even number: -2
+✓ -2 is correctly identified as even
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_EvenNumbers_ReturnsTrue(int)[10]" classname="com.junit.parameterized.EvenCheckerTest" time="0.001">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing even number: -4
+✓ -4 is correctly identified as even
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_EvenNumbers_ReturnsTrue(int)[11]" classname="com.junit.parameterized.EvenCheckerTest" time="0.001">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing even number: -6
+✓ -6 is correctly identified as even
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_OddNumbers_ReturnsFalse(int)[1]" classname="com.junit.parameterized.EvenCheckerTest" time="0.016">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing odd number: 1
+✓ 1 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_OddNumbers_ReturnsFalse(int)[2]" classname="com.junit.parameterized.EvenCheckerTest" time="0.001">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing odd number: 3
+✓ 3 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_OddNumbers_ReturnsFalse(int)[3]" classname="com.junit.parameterized.EvenCheckerTest" time="0.004">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing odd number: 5
+✓ 5 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_OddNumbers_ReturnsFalse(int)[4]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing odd number: 7
+✓ 7 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_OddNumbers_ReturnsFalse(int)[5]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing odd number: 9
+✓ 9 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_OddNumbers_ReturnsFalse(int)[6]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing odd number: 11
+✓ 11 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_OddNumbers_ReturnsFalse(int)[7]" classname="com.junit.parameterized.EvenCheckerTest" time="0.003">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing odd number: 101
+✓ 101 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_OddNumbers_ReturnsFalse(int)[8]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing odd number: 999
+✓ 999 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_OddNumbers_ReturnsFalse(int)[9]" classname="com.junit.parameterized.EvenCheckerTest" time="0.004">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing odd number: -1
+✓ -1 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_OddNumbers_ReturnsFalse(int)[10]" classname="com.junit.parameterized.EvenCheckerTest" time="0.005">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing odd number: -3
+✓ -3 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_OddNumbers_ReturnsFalse(int)[11]" classname="com.junit.parameterized.EvenCheckerTest" time="0.004">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing odd number: -5
+✓ -5 is correctly identified as odd
+]]></system-out>
+  </testcase>
+  <testcase name="testMultipleConditions_ConsistentResults(int, boolean, boolean, boolean)[1]" classname="com.junit.parameterized.EvenCheckerTest" time="0.029">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing multiple conditions for number: 4
+✓ All conditions consistent for 4
+]]></system-out>
+  </testcase>
+  <testcase name="testMultipleConditions_ConsistentResults(int, boolean, boolean, boolean)[2]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing multiple conditions for number: 3
+✓ All conditions consistent for 3
+]]></system-out>
+  </testcase>
+  <testcase name="testMultipleConditions_ConsistentResults(int, boolean, boolean, boolean)[3]" classname="com.junit.parameterized.EvenCheckerTest" time="0.003">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing multiple conditions for number: 0
+✓ All conditions consistent for 0
+]]></system-out>
+  </testcase>
+  <testcase name="testMultipleConditions_ConsistentResults(int, boolean, boolean, boolean)[4]" classname="com.junit.parameterized.EvenCheckerTest" time="0.003">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing multiple conditions for number: -2
+✓ All conditions consistent for -2
+]]></system-out>
+  </testcase>
+  <testcase name="testCountEvensInRange_VariousRanges_CorrectCount(int, int, int, String)[1]" classname="com.junit.parameterized.EvenCheckerTest" time="0.033">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing range [1, 5]: Range 1-5 should have 2 evens (2,4)
+✓ Range [1, 5] has 2 even numbers
+]]></system-out>
+  </testcase>
+  <testcase name="testCountEvensInRange_VariousRanges_CorrectCount(int, int, int, String)[2]" classname="com.junit.parameterized.EvenCheckerTest" time="0.004">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing range [1, 10]: Range 1-10 should have 5 evens (2,4,6,8,10)
+✓ Range [1, 10] has 5 even numbers
+]]></system-out>
+  </testcase>
+  <testcase name="testCountEvensInRange_VariousRanges_CorrectCount(int, int, int, String)[3]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing range [0, 10]: Range 0-10 should have 6 evens (0,2,4,6,8,10)
+✓ Range [0, 10] has 6 even numbers
+]]></system-out>
+  </testcase>
+  <testcase name="testCountEvensInRange_VariousRanges_CorrectCount(int, int, int, String)[4]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing range [2, 8]: Range 2-8 should have 4 evens (2,4,6,8)
+✓ Range [2, 8] has 4 even numbers
+]]></system-out>
+  </testcase>
+  <testcase name="testCountEvensInRange_VariousRanges_CorrectCount(int, int, int, String)[5]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing range [1, 1]: Range 1-1 should have 0 evens
+✓ Range [1, 1] has 0 even numbers
+]]></system-out>
+  </testcase>
+  <testcase name="testCountEvensInRange_VariousRanges_CorrectCount(int, int, int, String)[6]" classname="com.junit.parameterized.EvenCheckerTest" time="0.006">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing range [2, 2]: Range 2-2 should have 1 even
+✓ Range [2, 2] has 1 even numbers
+]]></system-out>
+  </testcase>
+  <testcase name="testCountEvensInRange_VariousRanges_CorrectCount(int, int, int, String)[7]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing range [5, 3]: Invalid range (start > end) should return 0
+✓ Range [5, 3] has 0 even numbers
+]]></system-out>
+  </testcase>
+  <testcase name="testCountEvensInRange_VariousRanges_CorrectCount(int, int, int, String)[8]" classname="com.junit.parameterized.EvenCheckerTest" time="0.005">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing range [-4, 4]: Range -4 to 4 should have 5 evens (-4,-2,0,2,4)
+✓ Range [-4, 4] has 5 even numbers
+]]></system-out>
+  </testcase>
+  <testcase name="testIsPositiveEven_VariousNumbers_CorrectResults(int, boolean)[1]" classname="com.junit.parameterized.EvenCheckerTest" time="0.006">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isPositiveEven with number: 2
+✓ 2 correctly returned true for isPositiveEven
+]]></system-out>
+  </testcase>
+  <testcase name="testIsPositiveEven_VariousNumbers_CorrectResults(int, boolean)[2]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isPositiveEven with number: 4
+✓ 4 correctly returned true for isPositiveEven
+]]></system-out>
+  </testcase>
+  <testcase name="testIsPositiveEven_VariousNumbers_CorrectResults(int, boolean)[3]" classname="com.junit.parameterized.EvenCheckerTest" time="0.004">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isPositiveEven with number: 6
+✓ 6 correctly returned true for isPositiveEven
+]]></system-out>
+  </testcase>
+  <testcase name="testIsPositiveEven_VariousNumbers_CorrectResults(int, boolean)[4]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isPositiveEven with number: 8
+✓ 8 correctly returned true for isPositiveEven
+]]></system-out>
+  </testcase>
+  <testcase name="testIsPositiveEven_VariousNumbers_CorrectResults(int, boolean)[5]" classname="com.junit.parameterized.EvenCheckerTest" time="0.006">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isPositiveEven with number: 1
+✓ 1 correctly returned false for isPositiveEven
+]]></system-out>
+  </testcase>
+  <testcase name="testIsPositiveEven_VariousNumbers_CorrectResults(int, boolean)[6]" classname="com.junit.parameterized.EvenCheckerTest" time="0.003">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isPositiveEven with number: 3
+✓ 3 correctly returned false for isPositiveEven
+]]></system-out>
+  </testcase>
+  <testcase name="testIsPositiveEven_VariousNumbers_CorrectResults(int, boolean)[7]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isPositiveEven with number: 0
+✓ 0 correctly returned false for isPositiveEven
+]]></system-out>
+  </testcase>
+  <testcase name="testIsPositiveEven_VariousNumbers_CorrectResults(int, boolean)[8]" classname="com.junit.parameterized.EvenCheckerTest" time="0.005">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isPositiveEven with number: -2
+✓ -2 correctly returned false for isPositiveEven
+]]></system-out>
+  </testcase>
+  <testcase name="testIsPositiveEven_VariousNumbers_CorrectResults(int, boolean)[9]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing isPositiveEven with number: -4
+✓ -4 correctly returned false for isPositiveEven
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_CsvSource_CorrectResults(int, boolean)[1]" classname="com.junit.parameterized.EvenCheckerTest" time="0.003">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing number: 0, expected: true
+✓ 0 correctly returned true
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_CsvSource_CorrectResults(int, boolean)[2]" classname="com.junit.parameterized.EvenCheckerTest" time="0.003">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing number: 1, expected: false
+✓ 1 correctly returned false
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_CsvSource_CorrectResults(int, boolean)[3]" classname="com.junit.parameterized.EvenCheckerTest" time="0.004">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing number: 2, expected: true
+✓ 2 correctly returned true
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_CsvSource_CorrectResults(int, boolean)[4]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing number: 3, expected: false
+✓ 3 correctly returned false
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_CsvSource_CorrectResults(int, boolean)[5]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing number: 4, expected: true
+✓ 4 correctly returned true
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_CsvSource_CorrectResults(int, boolean)[6]" classname="com.junit.parameterized.EvenCheckerTest" time="0.003">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing number: 5, expected: false
+✓ 5 correctly returned false
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_CsvSource_CorrectResults(int, boolean)[7]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing number: 10, expected: true
+✓ 10 correctly returned true
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_CsvSource_CorrectResults(int, boolean)[8]" classname="com.junit.parameterized.EvenCheckerTest" time="0.004">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing number: 15, expected: false
+✓ 15 correctly returned false
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_CsvSource_CorrectResults(int, boolean)[9]" classname="com.junit.parameterized.EvenCheckerTest" time="0.004">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing number: 100, expected: true
+✓ 100 correctly returned true
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_CsvSource_CorrectResults(int, boolean)[10]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing number: 101, expected: false
+✓ 101 correctly returned false
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_CsvSource_CorrectResults(int, boolean)[11]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing number: -2, expected: true
+✓ -2 correctly returned true
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEven_CsvSource_CorrectResults(int, boolean)[12]" classname="com.junit.parameterized.EvenCheckerTest" time="0.002">
+    <system-out><![CDATA[Setting up EvenChecker for test...
+Testing number: -3, expected: false
+✓ -3 correctly returned false
+]]></system-out>
+  </testcase>
+</testsuite>
