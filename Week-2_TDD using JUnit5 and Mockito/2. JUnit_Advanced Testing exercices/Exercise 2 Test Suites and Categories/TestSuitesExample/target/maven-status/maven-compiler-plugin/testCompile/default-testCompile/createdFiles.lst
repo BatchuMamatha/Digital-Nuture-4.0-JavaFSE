@@ -1,0 +1,6 @@
+com\junit\testsuite\FastTestSuite.class
+com\junit\testsuite\TestCategories.class
+com\junit\testsuite\AllTests.class
+com\junit\testsuite\StringProcessorTest.class
+com\junit\testsuite\CalculatorTest.class
+com\junit\testsuite\SmokeTestSuite.class
