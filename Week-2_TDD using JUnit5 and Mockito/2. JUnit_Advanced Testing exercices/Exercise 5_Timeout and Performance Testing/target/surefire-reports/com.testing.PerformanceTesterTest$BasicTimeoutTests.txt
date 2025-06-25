@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: com.testing.PerformanceTesterTest$BasicTimeoutTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.324 s <<< FAILURE! - in com.testing.PerformanceTesterTest$BasicTimeoutTests
+com.testing.PerformanceTesterTest$BasicTimeoutTests.testSlowTaskTimeout  Time elapsed: 2.012 s  <<< ERROR!
+java.util.concurrent.TimeoutException: testSlowTaskTimeout() timed out after 2 seconds
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	Suppressed: java.lang.RuntimeException: Task interrupted
+		at com.testing.PerformanceTester.performSlowTask(PerformanceTester.java:36)
+		at com.testing.PerformanceTesterTest$BasicTimeoutTests.testSlowTaskTimeout(PerformanceTesterTest.java:46)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		... 3 more
+	Caused by: java.lang.InterruptedException: sleep interrupted
+		at java.base/java.lang.Thread.sleepNanos0(Native Method)
+		at java.base/java.lang.Thread.sleepNanos(Thread.java:482)
+		at java.base/java.lang.Thread.sleep(Thread.java:513)
+		at com.testing.PerformanceTester.performSlowTask(PerformanceTester.java:33)
+		... 5 more
+
