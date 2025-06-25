@@ -1,0 +1,4 @@
+com\junit\order\MethodNameOrderedTests.class
+com\junit\order\OrderedTests.class
+com\junit\order\RandomOrderedTests.class
+com\junit\order\DisplayNameOrderedTests.class
