@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.library.DependencyInjectionTest" time="1.109" tests="10" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="24"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="c:\Users\saika\OneDrive\Desktop\Cognizant\Digital-Nuture-4.0-JavaFSE\Week-3_Spring Core and Maven\Exercise 2_Implementing Dependency Injection\LibraryManagement\target\test-classes;c:\Users\saika\OneDrive\Desktop\Cognizant\Digital-Nuture-4.0-JavaFSE\Week-3_Spring Core and Maven\Exercise 2_Implementing Dependency Injection\LibraryManagement\target\classes;C:\Users\saika\.m2\repository\org\springframework\spring-core\5.3.21\spring-core-5.3.21.jar;C:\Users\saika\.m2\repository\org\springframework\spring-jcl\5.3.21\spring-jcl-5.3.21.jar;C:\Users\saika\.m2\repository\org\springframework\spring-context\5.3.21\spring-context-5.3.21.jar;C:\Users\saika\.m2\repository\org\springframework\spring-aop\5.3.21\spring-aop-5.3.21.jar;C:\Users\saika\.m2\repository\org\springframework\spring-beans\5.3.21\spring-beans-5.3.21.jar;C:\Users\saika\.m2\repository\org\springframework\spring-expression\5.3.21\spring-expression-5.3.21.jar;C:\Users\saika\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\saika\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\saika\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\saika\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\saika\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\saika\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\saika\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\saika\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\saika\.m2\repository\org\springframework\spring-test\5.3.21\spring-test-5.3.21.jar;C:\Users\saika\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\saika\.m2\repository\ch\qos\logback\logback-classic\1.2.12\logback-classic-1.2.12.jar;C:\Users\saika\.m2\repository\ch\qos\logback\logback-core\1.2.12\logback-core-1.2.12.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="24"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\saika\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\latest\bin"/>
+    <property name="sun.java.command" value="C:\Users\saika\AppData\Local\Temp\surefire11740410132461790531\surefirebooter-20250629172328387_3.jar C:\Users\saika\AppData\Local\Temp\surefire11740410132461790531 2025-06-29T17-23-27_682-jvmRun1 surefire-20250629172328387_1tmp surefire_0-20250629172328387_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="c:\Users\saika\OneDrive\Desktop\Cognizant\Digital-Nuture-4.0-JavaFSE\Week-3_Spring Core and Maven\Exercise 2_Implementing Dependency Injection\LibraryManagement\target\test-classes;c:\Users\saika\OneDrive\Desktop\Cognizant\Digital-Nuture-4.0-JavaFSE\Week-3_Spring Core and Maven\Exercise 2_Implementing Dependency Injection\LibraryManagement\target\classes;C:\Users\saika\.m2\repository\org\springframework\spring-core\5.3.21\spring-core-5.3.21.jar;C:\Users\saika\.m2\repository\org\springframework\spring-jcl\5.3.21\spring-jcl-5.3.21.jar;C:\Users\saika\.m2\repository\org\springframework\spring-context\5.3.21\spring-context-5.3.21.jar;C:\Users\saika\.m2\repository\org\springframework\spring-aop\5.3.21\spring-aop-5.3.21.jar;C:\Users\saika\.m2\repository\org\springframework\spring-beans\5.3.21\spring-beans-5.3.21.jar;C:\Users\saika\.m2\repository\org\springframework\spring-expression\5.3.21\spring-expression-5.3.21.jar;C:\Users\saika\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\saika\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\saika\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\saika\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\saika\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\saika\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\saika\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\saika\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\saika\.m2\repository\org\springframework\spring-test\5.3.21\spring-test-5.3.21.jar;C:\Users\saika\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\saika\.m2\repository\ch\qos\logback\logback-classic\1.2.12\logback-classic-1.2.12.jar;C:\Users\saika\.m2\repository\ch\qos\logback\logback-core\1.2.12\logback-core-1.2.12.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\saika"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="C:\Users\saika\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\latest"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="c:\Users\saika\OneDrive\Desktop\Cognizant\Digital-Nuture-4.0-JavaFSE\Week-3_Spring Core and Maven\Exercise 2_Implementing Dependency Injection\LibraryManagement"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\saika\AppData\Local\Temp\surefire11740410132461790531\surefirebooter-20250629172328387_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="24.0.1+9"/>
+    <property name="user.name" value="saika"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-24.0.1+9"/>
+    <property name="localRepository" value="C:\Users\saika\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\saika\AppData\Local\Temp\"/>
+    <property name="java.version" value="24.0.1"/>
+    <property name="user.dir" value="c:\Users\saika\OneDrive\Desktop\Cognizant\Digital-Nuture-4.0-JavaFSE\Week-3_Spring Core and Maven\Exercise 2_Implementing Dependency Injection\LibraryManagement"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\saika\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\latest\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\saika\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\gradle\latest\bin;C:\Users\saika\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\maven\latest\bin;C:\Users\saika\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\latest\bin;C:\hive\bin;C:\hadoop\bin;C:\hadoop\sbin;C:\Program Files\Java\bin;C:\Program Files\Eclipse Adoptium\jdk-8.0.452.9-hotspot\bin;c:\Users\saika\AppData\Local\Programs\cursor\resources\app\bin;C:\Python\Scripts\;C:\Python\;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\derby\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.26.4-hotspot\bin;C:\Users\saika\.local\bin;C:\Users\saika\anaconda3;C:\Users\saika\anaconda3\Library\mingw-w64\bin;C:\hadoop\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\hive\bin;C:\hive\lib;C:\hive\bin;C:\derby\bin;C:\Program Files\Eclipse Adoptium\jdk-8.0.452.9-hotspot\bin;C:\Users\saika\anaconda3\Library\usr\bin;C:\Users\saika\ana;C:\Windows\System32;C:\hadoop\bin;C:\Users\saika\anaconda3;C:\Users\saika\anaconda3\Library\mingw-w64\bin;C:\Users\saika\anaconda3\Library\usr\bin;C:\Users\saika\anaconda3\Library\bin;C:\Users\saika\anaconda3\Scripts;C:\Users\saika\AppData\Local\Microsoft\WindowsApps;C:\Microsoft VS Code\bin;C:\Users\saika\AppData\Roaming\npm;C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.1.1\bin;;C:\Users\saika\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\saika\.cargo\bin;C:\hive\bin;C:\Program Files\Java\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;;c:\Users\saika\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="24.0.1+9"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="68.0"/>
+  </properties>
+  <testcase name="testRepositoryCapacityConstraints" classname="com.library.DependencyInjectionTest" time="0.657">
+    <system-out><![CDATA[17:23:29.791 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with default constructor
+17:23:29.864 [main] INFO  c.library.repository.BookRepository - Repository name set to: Advanced Library Database Repository
+17:23:29.865 [main] INFO  c.library.repository.BookRepository - Repository capacity set to: 1000
+17:23:29.866 [main] INFO  c.library.repository.BookRepository - Connection timeout set to: 30 seconds
+17:23:29.882 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with constructor injection - Name: Constructor-Based Repository, Capacity: 500, Timeout: 60
+17:23:29.883 [main] INFO  com.library.service.BookService - BookService initialized with default constructor
+17:23:29.887 [main] INFO  com.library.service.BookService - BookRepository injected into BookService via setter
+17:23:29.887 [main] INFO  com.library.service.BookService - Service name set to: Enhanced Library Book Management Service
+17:23:29.887 [main] INFO  com.library.service.BookService - Max books per user set to: 5
+17:23:29.887 [main] INFO  com.library.service.BookService - Loan period set to: 14 days
+17:23:29.895 [main] INFO  com.library.service.BookService - BookService initialized with constructor injection - Service: Constructor-Based Book Service, Max Books: 3, Loan Period: 21 days
+17:23:29.896 [main] INFO  com.library.service.LibraryManager - LibraryManager initialized
+17:23:29.899 [main] INFO  com.library.service.LibraryManager - BookService injected into LibraryManager
+17:23:29.900 [main] INFO  com.library.service.LibraryManager - BookRepository injected into LibraryManager
+17:23:29.900 [main] INFO  com.library.service.LibraryManager - Manager name set to: Chief Library Manager
+17:23:29.900 [main] INFO  com.library.service.LibraryManager - Operating hours set to: 8:00 AM - 6:00 PM
+17:23:29.900 [main] INFO  com.library.config.LibraryConfig - LibraryConfig initialized
+17:23:29.903 [main] INFO  com.library.config.LibraryConfig - Application name configured: Digital Library Management System
+17:23:29.903 [main] INFO  com.library.config.LibraryConfig - Version configured: 2.0
+17:23:29.904 [main] INFO  com.library.config.LibraryConfig - Logging enabled: true
+17:23:29.904 [main] INFO  com.library.config.LibraryConfig - Caching enabled: false
+17:23:29.926 [main] INFO  c.library.repository.BookRepository - Testing repository connection with timeout: 30 seconds
+17:23:30.027 [main] INFO  c.library.repository.BookRepository - Repository connection test successful
+]]></system-out>
+  </testcase>
+  <testcase name="testBeanScopeAndLifecycle" classname="com.library.DependencyInjectionTest" time="0.061">
+    <system-out><![CDATA[17:23:30.122 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with default constructor
+17:23:30.124 [main] INFO  c.library.repository.BookRepository - Repository name set to: Advanced Library Database Repository
+17:23:30.124 [main] INFO  c.library.repository.BookRepository - Repository capacity set to: 1000
+17:23:30.124 [main] INFO  c.library.repository.BookRepository - Connection timeout set to: 30 seconds
+17:23:30.126 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with constructor injection - Name: Constructor-Based Repository, Capacity: 500, Timeout: 60
+17:23:30.126 [main] INFO  com.library.service.BookService - BookService initialized with default constructor
+17:23:30.128 [main] INFO  com.library.service.BookService - BookRepository injected into BookService via setter
+17:23:30.128 [main] INFO  com.library.service.BookService - Service name set to: Enhanced Library Book Management Service
+17:23:30.128 [main] INFO  com.library.service.BookService - Max books per user set to: 5
+17:23:30.128 [main] INFO  com.library.service.BookService - Loan period set to: 14 days
+17:23:30.130 [main] INFO  com.library.service.BookService - BookService initialized with constructor injection - Service: Constructor-Based Book Service, Max Books: 3, Loan Period: 21 days
+17:23:30.131 [main] INFO  com.library.service.LibraryManager - LibraryManager initialized
+17:23:30.131 [main] INFO  com.library.service.LibraryManager - BookService injected into LibraryManager
+17:23:30.131 [main] INFO  com.library.service.LibraryManager - BookRepository injected into LibraryManager
+17:23:30.131 [main] INFO  com.library.service.LibraryManager - Manager name set to: Chief Library Manager
+17:23:30.132 [main] INFO  com.library.service.LibraryManager - Operating hours set to: 8:00 AM - 6:00 PM
+17:23:30.132 [main] INFO  com.library.config.LibraryConfig - LibraryConfig initialized
+17:23:30.132 [main] INFO  com.library.config.LibraryConfig - Application name configured: Digital Library Management System
+17:23:30.132 [main] INFO  com.library.config.LibraryConfig - Version configured: 2.0
+17:23:30.132 [main] INFO  com.library.config.LibraryConfig - Logging enabled: true
+17:23:30.133 [main] INFO  com.library.config.LibraryConfig - Caching enabled: false
+]]></system-out>
+  </testcase>
+  <testcase name="testSpringContextLoads" classname="com.library.DependencyInjectionTest" time="0.05">
+    <system-out><![CDATA[17:23:30.165 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with default constructor
+17:23:30.167 [main] INFO  c.library.repository.BookRepository - Repository name set to: Advanced Library Database Repository
+17:23:30.167 [main] INFO  c.library.repository.BookRepository - Repository capacity set to: 1000
+17:23:30.167 [main] INFO  c.library.repository.BookRepository - Connection timeout set to: 30 seconds
+17:23:30.169 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with constructor injection - Name: Constructor-Based Repository, Capacity: 500, Timeout: 60
+17:23:30.170 [main] INFO  com.library.service.BookService - BookService initialized with default constructor
+17:23:30.171 [main] INFO  com.library.service.BookService - BookRepository injected into BookService via setter
+17:23:30.171 [main] INFO  com.library.service.BookService - Service name set to: Enhanced Library Book Management Service
+17:23:30.171 [main] INFO  com.library.service.BookService - Max books per user set to: 5
+17:23:30.172 [main] INFO  com.library.service.BookService - Loan period set to: 14 days
+17:23:30.174 [main] INFO  com.library.service.BookService - BookService initialized with constructor injection - Service: Constructor-Based Book Service, Max Books: 3, Loan Period: 21 days
+17:23:30.174 [main] INFO  com.library.service.LibraryManager - LibraryManager initialized
+17:23:30.175 [main] INFO  com.library.service.LibraryManager - BookService injected into LibraryManager
+17:23:30.176 [main] INFO  com.library.service.LibraryManager - BookRepository injected into LibraryManager
+17:23:30.176 [main] INFO  com.library.service.LibraryManager - Manager name set to: Chief Library Manager
+17:23:30.177 [main] INFO  com.library.service.LibraryManager - Operating hours set to: 8:00 AM - 6:00 PM
+17:23:30.179 [main] INFO  com.library.config.LibraryConfig - LibraryConfig initialized
+17:23:30.182 [main] INFO  com.library.config.LibraryConfig - Application name configured: Digital Library Management System
+17:23:30.183 [main] INFO  com.library.config.LibraryConfig - Version configured: 2.0
+17:23:30.183 [main] INFO  com.library.config.LibraryConfig - Logging enabled: true
+17:23:30.183 [main] INFO  com.library.config.LibraryConfig - Caching enabled: false
+]]></system-out>
+  </testcase>
+  <testcase name="testDifferentInjectionConfigurations" classname="com.library.DependencyInjectionTest" time="0.07">
+    <system-out><![CDATA[17:23:30.237 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with default constructor
+17:23:30.239 [main] INFO  c.library.repository.BookRepository - Repository name set to: Advanced Library Database Repository
+17:23:30.239 [main] INFO  c.library.repository.BookRepository - Repository capacity set to: 1000
+17:23:30.239 [main] INFO  c.library.repository.BookRepository - Connection timeout set to: 30 seconds
+17:23:30.242 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with constructor injection - Name: Constructor-Based Repository, Capacity: 500, Timeout: 60
+17:23:30.242 [main] INFO  com.library.service.BookService - BookService initialized with default constructor
+17:23:30.244 [main] INFO  com.library.service.BookService - BookRepository injected into BookService via setter
+17:23:30.244 [main] INFO  com.library.service.BookService - Service name set to: Enhanced Library Book Management Service
+17:23:30.244 [main] INFO  com.library.service.BookService - Max books per user set to: 5
+17:23:30.245 [main] INFO  com.library.service.BookService - Loan period set to: 14 days
+17:23:30.247 [main] INFO  com.library.service.BookService - BookService initialized with constructor injection - Service: Constructor-Based Book Service, Max Books: 3, Loan Period: 21 days
+17:23:30.248 [main] INFO  com.library.service.LibraryManager - LibraryManager initialized
+17:23:30.249 [main] INFO  com.library.service.LibraryManager - BookService injected into LibraryManager
+17:23:30.250 [main] INFO  com.library.service.LibraryManager - BookRepository injected into LibraryManager
+17:23:30.250 [main] INFO  com.library.service.LibraryManager - Manager name set to: Chief Library Manager
+17:23:30.250 [main] INFO  com.library.service.LibraryManager - Operating hours set to: 8:00 AM - 6:00 PM
+17:23:30.250 [main] INFO  com.library.config.LibraryConfig - LibraryConfig initialized
+17:23:30.251 [main] INFO  com.library.config.LibraryConfig - Application name configured: Digital Library Management System
+17:23:30.252 [main] INFO  com.library.config.LibraryConfig - Version configured: 2.0
+17:23:30.252 [main] INFO  com.library.config.LibraryConfig - Logging enabled: true
+17:23:30.252 [main] INFO  com.library.config.LibraryConfig - Caching enabled: false
+17:23:30.254 [main] INFO  com.library.service.BookService - Dependency injection status - BookRepository: INJECTED
+17:23:30.256 [main] INFO  com.library.service.BookService - Dependency injection status - BookRepository: INJECTED
+17:23:30.256 [main] INFO  com.library.service.BookService - Found 7 books in the library
+17:23:30.257 [main] INFO  com.library.service.BookService - Found 7 books in the library
+]]></system-out>
+  </testcase>
+  <testcase name="testBookServiceFunctionality" classname="com.library.DependencyInjectionTest" time="0.051">
+    <system-out><![CDATA[17:23:30.288 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with default constructor
+17:23:30.290 [main] INFO  c.library.repository.BookRepository - Repository name set to: Advanced Library Database Repository
+17:23:30.291 [main] INFO  c.library.repository.BookRepository - Repository capacity set to: 1000
+17:23:30.291 [main] INFO  c.library.repository.BookRepository - Connection timeout set to: 30 seconds
+17:23:30.296 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with constructor injection - Name: Constructor-Based Repository, Capacity: 500, Timeout: 60
+17:23:30.297 [main] INFO  com.library.service.BookService - BookService initialized with default constructor
+17:23:30.299 [main] INFO  com.library.service.BookService - BookRepository injected into BookService via setter
+17:23:30.299 [main] INFO  com.library.service.BookService - Service name set to: Enhanced Library Book Management Service
+17:23:30.299 [main] INFO  com.library.service.BookService - Max books per user set to: 5
+17:23:30.299 [main] INFO  com.library.service.BookService - Loan period set to: 14 days
+17:23:30.302 [main] INFO  com.library.service.BookService - BookService initialized with constructor injection - Service: Constructor-Based Book Service, Max Books: 3, Loan Period: 21 days
+17:23:30.302 [main] INFO  com.library.service.LibraryManager - LibraryManager initialized
+17:23:30.303 [main] INFO  com.library.service.LibraryManager - BookService injected into LibraryManager
+17:23:30.304 [main] INFO  com.library.service.LibraryManager - BookRepository injected into LibraryManager
+17:23:30.305 [main] INFO  com.library.service.LibraryManager - Manager name set to: Chief Library Manager
+17:23:30.305 [main] INFO  com.library.service.LibraryManager - Operating hours set to: 8:00 AM - 6:00 PM
+17:23:30.306 [main] INFO  com.library.config.LibraryConfig - LibraryConfig initialized
+17:23:30.306 [main] INFO  com.library.config.LibraryConfig - Application name configured: Digital Library Management System
+17:23:30.307 [main] INFO  com.library.config.LibraryConfig - Version configured: 2.0
+17:23:30.307 [main] INFO  com.library.config.LibraryConfig - Logging enabled: true
+17:23:30.307 [main] INFO  com.library.config.LibraryConfig - Caching enabled: false
+17:23:30.308 [main] INFO  com.library.service.BookService - Found 7 books in the library
+17:23:30.308 [main] INFO  com.library.service.BookService - Searching books by category: 'Technology'
+]]></system-out>
+  </testcase>
+  <testcase name="testMultiLevelDependencyInjection" classname="com.library.DependencyInjectionTest" time="0.04">
+    <system-out><![CDATA[17:23:30.337 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with default constructor
+17:23:30.338 [main] INFO  c.library.repository.BookRepository - Repository name set to: Advanced Library Database Repository
+17:23:30.339 [main] INFO  c.library.repository.BookRepository - Repository capacity set to: 1000
+17:23:30.339 [main] INFO  c.library.repository.BookRepository - Connection timeout set to: 30 seconds
+17:23:30.341 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with constructor injection - Name: Constructor-Based Repository, Capacity: 500, Timeout: 60
+17:23:30.341 [main] INFO  com.library.service.BookService - BookService initialized with default constructor
+17:23:30.343 [main] INFO  com.library.service.BookService - BookRepository injected into BookService via setter
+17:23:30.344 [main] INFO  com.library.service.BookService - Service name set to: Enhanced Library Book Management Service
+17:23:30.345 [main] INFO  com.library.service.BookService - Max books per user set to: 5
+17:23:30.345 [main] INFO  com.library.service.BookService - Loan period set to: 14 days
+17:23:30.348 [main] INFO  com.library.service.BookService - BookService initialized with constructor injection - Service: Constructor-Based Book Service, Max Books: 3, Loan Period: 21 days
+17:23:30.348 [main] INFO  com.library.service.LibraryManager - LibraryManager initialized
+17:23:30.349 [main] INFO  com.library.service.LibraryManager - BookService injected into LibraryManager
+17:23:30.349 [main] INFO  com.library.service.LibraryManager - BookRepository injected into LibraryManager
+17:23:30.349 [main] INFO  com.library.service.LibraryManager - Manager name set to: Chief Library Manager
+17:23:30.349 [main] INFO  com.library.service.LibraryManager - Operating hours set to: 8:00 AM - 6:00 PM
+17:23:30.350 [main] INFO  com.library.config.LibraryConfig - LibraryConfig initialized
+17:23:30.351 [main] INFO  com.library.config.LibraryConfig - Application name configured: Digital Library Management System
+17:23:30.351 [main] INFO  com.library.config.LibraryConfig - Version configured: 2.0
+17:23:30.351 [main] INFO  com.library.config.LibraryConfig - Logging enabled: true
+17:23:30.351 [main] INFO  com.library.config.LibraryConfig - Caching enabled: false
+17:23:30.352 [main] INFO  com.library.service.BookService - Dependency injection status - BookRepository: INJECTED
+17:23:30.352 [main] INFO  com.library.service.LibraryManager - Dependency injection verification:
+17:23:30.352 [main] INFO  com.library.service.LibraryManager - BookService injected: true
+17:23:30.352 [main] INFO  com.library.service.LibraryManager - BookRepository injected: true
+17:23:30.352 [main] INFO  com.library.service.BookService - Dependency injection status - BookRepository: INJECTED
+17:23:30.352 [main] INFO  com.library.service.LibraryManager - BookService->BookRepository injected: true
+17:23:30.352 [main] INFO  com.library.service.LibraryManager - All dependencies properly injected: true
+]]></system-out>
+  </testcase>
+  <testcase name="testConfigurationPropertyInjection" classname="com.library.DependencyInjectionTest" time="0.028">
+    <system-out><![CDATA[17:23:30.371 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with default constructor
+17:23:30.372 [main] INFO  c.library.repository.BookRepository - Repository name set to: Advanced Library Database Repository
+17:23:30.372 [main] INFO  c.library.repository.BookRepository - Repository capacity set to: 1000
+17:23:30.372 [main] INFO  c.library.repository.BookRepository - Connection timeout set to: 30 seconds
+17:23:30.374 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with constructor injection - Name: Constructor-Based Repository, Capacity: 500, Timeout: 60
+17:23:30.374 [main] INFO  com.library.service.BookService - BookService initialized with default constructor
+17:23:30.375 [main] INFO  com.library.service.BookService - BookRepository injected into BookService via setter
+17:23:30.375 [main] INFO  com.library.service.BookService - Service name set to: Enhanced Library Book Management Service
+17:23:30.375 [main] INFO  com.library.service.BookService - Max books per user set to: 5
+17:23:30.375 [main] INFO  com.library.service.BookService - Loan period set to: 14 days
+17:23:30.377 [main] INFO  com.library.service.BookService - BookService initialized with constructor injection - Service: Constructor-Based Book Service, Max Books: 3, Loan Period: 21 days
+17:23:30.378 [main] INFO  com.library.service.LibraryManager - LibraryManager initialized
+17:23:30.379 [main] INFO  com.library.service.LibraryManager - BookService injected into LibraryManager
+17:23:30.379 [main] INFO  com.library.service.LibraryManager - BookRepository injected into LibraryManager
+17:23:30.379 [main] INFO  com.library.service.LibraryManager - Manager name set to: Chief Library Manager
+17:23:30.379 [main] INFO  com.library.service.LibraryManager - Operating hours set to: 8:00 AM - 6:00 PM
+17:23:30.379 [main] INFO  com.library.config.LibraryConfig - LibraryConfig initialized
+17:23:30.380 [main] INFO  com.library.config.LibraryConfig - Application name configured: Digital Library Management System
+17:23:30.380 [main] INFO  com.library.config.LibraryConfig - Version configured: 2.0
+17:23:30.380 [main] INFO  com.library.config.LibraryConfig - Logging enabled: true
+17:23:30.380 [main] INFO  com.library.config.LibraryConfig - Caching enabled: false
+]]></system-out>
+  </testcase>
+  <testcase name="testConstructorBasedDependencyInjection" classname="com.library.DependencyInjectionTest" time="0.025">
+    <system-out><![CDATA[17:23:30.398 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with default constructor
+17:23:30.399 [main] INFO  c.library.repository.BookRepository - Repository name set to: Advanced Library Database Repository
+17:23:30.399 [main] INFO  c.library.repository.BookRepository - Repository capacity set to: 1000
+17:23:30.399 [main] INFO  c.library.repository.BookRepository - Connection timeout set to: 30 seconds
+17:23:30.401 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with constructor injection - Name: Constructor-Based Repository, Capacity: 500, Timeout: 60
+17:23:30.401 [main] INFO  com.library.service.BookService - BookService initialized with default constructor
+17:23:30.402 [main] INFO  com.library.service.BookService - BookRepository injected into BookService via setter
+17:23:30.402 [main] INFO  com.library.service.BookService - Service name set to: Enhanced Library Book Management Service
+17:23:30.402 [main] INFO  com.library.service.BookService - Max books per user set to: 5
+17:23:30.402 [main] INFO  com.library.service.BookService - Loan period set to: 14 days
+17:23:30.404 [main] INFO  com.library.service.BookService - BookService initialized with constructor injection - Service: Constructor-Based Book Service, Max Books: 3, Loan Period: 21 days
+17:23:30.405 [main] INFO  com.library.service.LibraryManager - LibraryManager initialized
+17:23:30.405 [main] INFO  com.library.service.LibraryManager - BookService injected into LibraryManager
+17:23:30.405 [main] INFO  com.library.service.LibraryManager - BookRepository injected into LibraryManager
+17:23:30.405 [main] INFO  com.library.service.LibraryManager - Manager name set to: Chief Library Manager
+17:23:30.405 [main] INFO  com.library.service.LibraryManager - Operating hours set to: 8:00 AM - 6:00 PM
+17:23:30.406 [main] INFO  com.library.config.LibraryConfig - LibraryConfig initialized
+17:23:30.406 [main] INFO  com.library.config.LibraryConfig - Application name configured: Digital Library Management System
+17:23:30.406 [main] INFO  com.library.config.LibraryConfig - Version configured: 2.0
+17:23:30.406 [main] INFO  com.library.config.LibraryConfig - Logging enabled: true
+17:23:30.406 [main] INFO  com.library.config.LibraryConfig - Caching enabled: false
+17:23:30.407 [main] INFO  com.library.service.BookService - Dependency injection status - BookRepository: INJECTED
+]]></system-out>
+  </testcase>
+  <testcase name="testSetterBasedDependencyInjection" classname="com.library.DependencyInjectionTest" time="0.037">
+    <system-out><![CDATA[17:23:30.424 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with default constructor
+17:23:30.426 [main] INFO  c.library.repository.BookRepository - Repository name set to: Advanced Library Database Repository
+17:23:30.426 [main] INFO  c.library.repository.BookRepository - Repository capacity set to: 1000
+17:23:30.427 [main] INFO  c.library.repository.BookRepository - Connection timeout set to: 30 seconds
+17:23:30.430 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with constructor injection - Name: Constructor-Based Repository, Capacity: 500, Timeout: 60
+17:23:30.431 [main] INFO  com.library.service.BookService - BookService initialized with default constructor
+17:23:30.432 [main] INFO  com.library.service.BookService - BookRepository injected into BookService via setter
+17:23:30.432 [main] INFO  com.library.service.BookService - Service name set to: Enhanced Library Book Management Service
+17:23:30.433 [main] INFO  com.library.service.BookService - Max books per user set to: 5
+17:23:30.433 [main] INFO  com.library.service.BookService - Loan period set to: 14 days
+17:23:30.436 [main] INFO  com.library.service.BookService - BookService initialized with constructor injection - Service: Constructor-Based Book Service, Max Books: 3, Loan Period: 21 days
+17:23:30.439 [main] INFO  com.library.service.LibraryManager - LibraryManager initialized
+17:23:30.440 [main] INFO  com.library.service.LibraryManager - BookService injected into LibraryManager
+17:23:30.440 [main] INFO  com.library.service.LibraryManager - BookRepository injected into LibraryManager
+17:23:30.440 [main] INFO  com.library.service.LibraryManager - Manager name set to: Chief Library Manager
+17:23:30.440 [main] INFO  com.library.service.LibraryManager - Operating hours set to: 8:00 AM - 6:00 PM
+17:23:30.441 [main] INFO  com.library.config.LibraryConfig - LibraryConfig initialized
+17:23:30.442 [main] INFO  com.library.config.LibraryConfig - Application name configured: Digital Library Management System
+17:23:30.442 [main] INFO  com.library.config.LibraryConfig - Version configured: 2.0
+17:23:30.442 [main] INFO  com.library.config.LibraryConfig - Logging enabled: true
+17:23:30.442 [main] INFO  com.library.config.LibraryConfig - Caching enabled: false
+17:23:30.443 [main] INFO  com.library.service.BookService - Dependency injection status - BookRepository: INJECTED
+]]></system-out>
+  </testcase>
+  <testcase name="testBorrowingWorkflow" classname="com.library.DependencyInjectionTest" time="0.028">
+    <system-out><![CDATA[17:23:30.460 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with default constructor
+17:23:30.464 [main] INFO  c.library.repository.BookRepository - Repository name set to: Advanced Library Database Repository
+17:23:30.464 [main] INFO  c.library.repository.BookRepository - Repository capacity set to: 1000
+17:23:30.464 [main] INFO  c.library.repository.BookRepository - Connection timeout set to: 30 seconds
+17:23:30.466 [main] INFO  c.library.repository.BookRepository - BookRepository initialized with constructor injection - Name: Constructor-Based Repository, Capacity: 500, Timeout: 60
+17:23:30.466 [main] INFO  com.library.service.BookService - BookService initialized with default constructor
+17:23:30.467 [main] INFO  com.library.service.BookService - BookRepository injected into BookService via setter
+17:23:30.467 [main] INFO  com.library.service.BookService - Service name set to: Enhanced Library Book Management Service
+17:23:30.468 [main] INFO  com.library.service.BookService - Max books per user set to: 5
+17:23:30.468 [main] INFO  com.library.service.BookService - Loan period set to: 14 days
+17:23:30.470 [main] INFO  com.library.service.BookService - BookService initialized with constructor injection - Service: Constructor-Based Book Service, Max Books: 3, Loan Period: 21 days
+17:23:30.470 [main] INFO  com.library.service.LibraryManager - LibraryManager initialized
+17:23:30.471 [main] INFO  com.library.service.LibraryManager - BookService injected into LibraryManager
+17:23:30.472 [main] INFO  com.library.service.LibraryManager - BookRepository injected into LibraryManager
+17:23:30.472 [main] INFO  com.library.service.LibraryManager - Manager name set to: Chief Library Manager
+17:23:30.472 [main] INFO  com.library.service.LibraryManager - Operating hours set to: 8:00 AM - 6:00 PM
+17:23:30.472 [main] INFO  com.library.config.LibraryConfig - LibraryConfig initialized
+17:23:30.473 [main] INFO  com.library.config.LibraryConfig - Application name configured: Digital Library Management System
+17:23:30.473 [main] INFO  com.library.config.LibraryConfig - Version configured: 2.0
+17:23:30.473 [main] INFO  com.library.config.LibraryConfig - Logging enabled: true
+17:23:30.473 [main] INFO  com.library.config.LibraryConfig - Caching enabled: false
+17:23:30.474 [main] INFO  com.library.service.BookService - Processing book borrow request for ID: 1 by user: TEST_USER
+17:23:30.474 [main] INFO  c.library.repository.BookRepository - Saving book: The Great Gatsby to repository: Advanced Library Database Repository
+17:23:30.474 [main] INFO  com.library.service.BookService - Book borrowed successfully: The Great Gatsby for 14 days
+17:23:30.474 [main] INFO  com.library.service.BookService - Processing book return for ID: 1 by user: TEST_USER
+17:23:30.474 [main] INFO  c.library.repository.BookRepository - Saving book: The Great Gatsby to repository: Advanced Library Database Repository
+17:23:30.474 [main] INFO  com.library.service.BookService - Book returned successfully: The Great Gatsby
+]]></system-out>
+  </testcase>
+</testsuite>
