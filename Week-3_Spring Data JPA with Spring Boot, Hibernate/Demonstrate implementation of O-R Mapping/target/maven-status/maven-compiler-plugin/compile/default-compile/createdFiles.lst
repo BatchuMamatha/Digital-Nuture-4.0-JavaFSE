@@ -1,0 +1,13 @@
+com\cognizant\ormapping\entity\Project$ProjectStatus.class
+com\cognizant\ormapping\entity\Address.class
+com\cognizant\ormapping\entity\Project$ProjectPriority.class
+com\cognizant\ormapping\entity\Project.class
+com\cognizant\ormapping\repository\ProjectRepository.class
+com\cognizant\ormapping\service\DemoService.class
+com\cognizant\ormapping\entity\Department.class
+com\cognizant\ormapping\controller\ORMappingController.class
+com\cognizant\ormapping\entity\Employee.class
+com\cognizant\ormapping\repository\EmployeeRepository.class
+com\cognizant\ormapping\ORMappingDemoApplication.class
+com\cognizant\ormapping\repository\DepartmentRepository.class
+com\cognizant\ormapping\repository\AddressRepository.class
