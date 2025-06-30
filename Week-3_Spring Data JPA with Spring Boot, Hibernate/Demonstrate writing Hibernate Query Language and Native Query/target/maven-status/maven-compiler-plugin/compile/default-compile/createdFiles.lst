@@ -1,0 +1,10 @@
+com\cognizant\hql\repository\DepartmentRepository.class
+com\cognizant\hql\HQLDemoApplication.class
+com\cognizant\hql\config\DataInitializer.class
+com\cognizant\hql\dto\EmployeeSummaryDTO.class
+com\cognizant\hql\controller\HQLDemoController.class
+com\cognizant\hql\dto\DepartmentSummaryDTO.class
+com\cognizant\hql\entity\Employee.class
+com\cognizant\hql\service\QueryDemonstrationService.class
+com\cognizant\hql\entity\Department.class
+com\cognizant\hql\repository\EmployeeRepository.class
