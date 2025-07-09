@@ -13,6 +13,14 @@
 			"group": "build",
 			"isBackground": true,
 			"problemMatcher": []
+		},
+		{
+			"label": "Run Country Code REST Service",
+			"type": "shell",
+			"command": "cd \"c:\\Users\\saika\\OneDrive\\Desktop\\Cognizant\\Digital-Nuture-4.0-JavaFSE\\Week-4_Spring REST using Spring Boot 3\\REST - Get country based on country code\" && mvn spring-boot:run",
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": []
 		}
 	]
 }
