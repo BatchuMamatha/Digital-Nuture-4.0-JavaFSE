@@ -51,4 +51,25 @@ public class HelloController {
                 "  \"status\": \"Active\"\n" +
                 "}";
     }
+
+    /**
+     * Hello World RESTful Web Service
+     * 
+     * Method: GET
+     * URL: /hello
+     * @return Hello World message
+     */
+    @GetMapping("/hello")
+    public String sayHello() {
+        // Start log
+        logger.info("START - sayHello() method called - Hello World RESTful Web Service");
+        
+        // Method Implementation: return hard coded string "Hello World!!"
+        String response = "Hello World!!";
+        
+        // End log
+        logger.info("END - sayHello() method completed - Returning: " + response);
+        
+        return response;
+    }
 }
