@@ -5,6 +5,14 @@
 			"label": "Run Employee Management System",
 			"type": "shell",
 			"command": "cd \"c:\\Users\\saika\\OneDrive\\Desktop\\Cognizant\\Digital-Nuture-4.0-JavaFSE\\Week-1_Data structures and Algorithms\\Exercise 4_Employee Management System\\EmployeeManagementSystem\" && mvn clean compile exec:java -Dexec.mainClass=\"com.employee.EmployeeManagementSystem\""
+		},
+		{
+			"label": "Run Country REST Service",
+			"type": "shell",
+			"command": "cd \"c:\\Users\\saika\\OneDrive\\Desktop\\Cognizant\\Digital-Nuture-4.0-JavaFSE\\Week-4_Spring REST using Spring Boot 3\\REST - Country Web Service\" && mvn spring-boot:run",
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": []
 		}
 	]
 }
