@@ -1,6 +1,0 @@
-{
-    "java.project.sourcePaths": [
-        "Week-1_Design principles & Patterns/Exercise 1_Implementing the Singleton Pattern/SingletonPatternExample/src/main/java/com/singleton",
-        "Week-1_Design principles & Patterns/Exercise 3_Implementing the Builder Pattern/BuilderPatternExample/src/main/java/com/builder"
-    ]
-}
