@@ -10,6 +10,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Main Spring Boot Application Class for Spring Data JPA Example
@@ -63,6 +64,9 @@ public class OrmlearnApplication implements CommandLineRunner {
         Country uk = countryService.createCountry("GBR", "GB", "United Kingdom");
         Country japan = countryService.createCountry("JPN", "JP", "Japan");
         
+        logger.info("Created countries - USA: {}, India: {}, UK: {}, Japan: {}", 
+            usa.getId(), india.getId(), uk.getId(), japan.getId());
+        
         // Read all countries
         logger.info("Reading all countries...");
         List<Country> allCountries = countryService.getAllCountries();
@@ -102,14 +106,14 @@ public class OrmlearnApplication implements CommandLineRunner {
         logger.info("Countries containing 'United': {}", 
             countriesWithUnited.stream()
                 .map(Country::getCountryName)
-                .toList());
+                .collect(Collectors.toList()));
         
         // Find by ISO code
         List<Country> countriesWithIN = countryService.findByIsoCode("IN");
         logger.info("Countries with ISO code 'IN': {}", 
             countriesWithIN.stream()
                 .map(Country::getCountryName)
-                .toList());
+                .collect(Collectors.toList()));
         
         // Custom query - find all country codes
         List<String> allCountryCodes = countryService.findAllCountryCodes();
